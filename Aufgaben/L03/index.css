@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+}
+header {
+    background-image: url(./assets/foto/flowers-7085710_960_720.jpg);
+    background-repeat: no-repeat;
+    height: 400px;
+    top: 0;
+    background-size: cover;
+}
+footer {
+    background-color: #eaeaea;
+    font-size: smaller;
+    color: gray;
+    display: flex;
+    justify-content: space-between;
+}
+footer div:nth-child(1){
+    flex: 1;
+
+}
+footer div:nth-child(2){
+    flex: 1;
+
+}
+footer div:nth-child(3){
+    flex: 1;
+}
+/*footer div:nth-child(4){
+    flex: 1;
+
+footer div:nth-child(5){
+    flex 1;
+
+} */
+/* footer>*{
+    width: 45%;
+    margin: 0 0 0 10px
+} */
+
+h1 {
+    color: #fff;
+}
+li {
+    display: inline;
+}
+a {
+    text-decoration: none;
+    color: grey;
+}
+.Hauptseite {
+    color: white;
+    text-decoration: underline;
+}
+.breite {
+    transform: translateX(-50%);
+    width: 800px;
+    left: 50%;
+    position: relative;
+}
+
+
+
+
