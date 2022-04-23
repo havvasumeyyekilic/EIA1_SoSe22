@@ -3,16 +3,14 @@ body {
     width: 100%;
 }
 header {
-    background-image: url(./assets/foto/sunset-gd35ec1985_640.jpg);
+    background-image: url(./assets/foto/sea-ga5dddc65a_640.jpg);
     background-repeat: no-repeat;
     height: 400px;
     top: 0;
     background-size: cover;
 }
 footer {
-    background-color: #eaeaea;
     background-size: 100%;
-    color: gray;
     display: flex;
     justify-content: space-between;
     height: 250px;
@@ -45,6 +43,7 @@ a {
     background-color: grey;
     color: white;
     border: none;
+;
 }
 #email {
     background-color: gray;
@@ -75,4 +74,7 @@ a:hover {
 }
 .navigation {
     float: right;
+}
+.grau {
+    background-color: #eaeaea;
 }
