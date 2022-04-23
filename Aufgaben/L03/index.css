@@ -3,14 +3,15 @@ body {
     width: 100%;
 }
 header {
-    background-image: url(./assets/foto/flowers-7085710_960_720.jpg);
-    background-repeat: no-repeat; repeat;
+    background-image: url(./assets/foto/sunset-gd35ec1985_640.jpg);
+    background-repeat: no-repeat;
     height: 400px;
     top: 0;
     background-size: cover;
 }
 footer {
     background-color: #eaeaea;
+    background-size: 100%;
     color: gray;
     display: flex;
     justify-content: space-between;
@@ -43,10 +44,12 @@ a {
 #name {
     background-color: grey;
     color: white;
+    border: none;
 }
 #email {
     background-color: gray;
     color: white;
+    border: none;
 }
 #message {
     background-color: gray;
@@ -55,10 +58,21 @@ a {
 #send {
     background-color: grey;
     color: white;
+    border: none;
 }
 input::placeholder {
     color: white;
 }
 textarea::placeholder {
     color: white;
+}
+a:hover {
+    color: white;
+    text-decoration: underline;
+}
+.logo {
+    float: left;
+}
+.navigation {
+    float: right;
 }
