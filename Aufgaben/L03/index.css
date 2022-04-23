@@ -3,7 +3,7 @@ body {
     width: 100%;
 }
 header {
-    background-image: url(./assets/foto/sea-ga5dddc65a_640.jpg);
+    background-image: url(./Materialordner/clouds-g4c35ea8a4_640.jpg);
     background-repeat: no-repeat;
     height: 400px;
     top: 0;
@@ -71,6 +71,7 @@ a:hover {
 }
 .logo {
     float: left;
+    width: 250px;
 }
 .navigation {
     float: right;
