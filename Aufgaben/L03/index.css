@@ -75,6 +75,7 @@ a:hover {
 }
 .navigation {
     float: right;
+    padding: 120px;
 }
 .grau {
     background-color: #eaeaea;
