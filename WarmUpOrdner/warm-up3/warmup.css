@@ -1,0 +1,24 @@
+body {
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+.page-wrapper {
+    position: relative;
+    margin: auto;
+    margin-top: 100px;
+    width: 800px;
+    height: 400px;
+    background: white;
+    color: black;
+}
+.element-top-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.element-bottom-right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
