@@ -15,7 +15,6 @@ const frankreich2022Anteileuropa2022: number = frankreich2022 / europa2022 * 100
 const italien2022Anteileuropa2022: number = italien2022 / europa2022 * 100;
 const niederlande2022Anteileuropa2022: number = niederlande2022 / europa2022 * 100;
 
-
 const deutschlandDifferenz: number = deutschland2022 - deutschland2008;
 const deutschlandWachstum2008: number = deutschlandDifferenz / deutschland2022 * 100;
 
