@@ -1,6 +1,6 @@
 var sound: HTMLAudioElement = [
 
-    new Audio("./assets/DP1.mp3"), //0
+    new Audio("./assets/DP1.mp3"),
     new Audio("./assets/DP2.mp3"),
     new Audio("./assets/DP3.mp3"),
     new Audio("./assets/DP4.mp3"),
