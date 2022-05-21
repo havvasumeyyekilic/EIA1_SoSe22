@@ -9,9 +9,14 @@ var sound = [
     new Audio("./assets/DP8.mp3"),
     new Audio("./assets/DP9.mp3")
 ];
+
+
+
 window.addEventListener("load", function () {
     document.querySelector(".pad").addEventListener('click', playSample);
 });
+
+
 function playSample() {
     document.querySelector(".pad-1").addEventListener('click', Pad1);
     function Pad1() {
@@ -58,6 +63,8 @@ function playSample() {
         sound[8].play();
         sound.volume = 0.2;
     }
+
+    // 3 Sounds play //
     document.querySelector(".play").addEventListener('click', Playbutton);
     function Playbutton() {
         setInterval(function () {
@@ -67,4 +74,4 @@ function playSample() {
         }, 500);
     }
 }
-//# sourceMappingURL=drumpad.js.map
+//# sourceMappingURL=drumpad.js.map //
