@@ -1,3 +1,4 @@
+namespace L08 {
 window.addEventListener("load", addClickListenerdrumpad);
 
 function playSample(soundQUelle: string): void {
@@ -36,4 +37,5 @@ function playBeat(): void {
             zaehler = 0;
         }
     }, 500);
+}
 }
