@@ -1,0 +1,12 @@
+body {
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #bebebe;
+}
+
+#list {
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+}
