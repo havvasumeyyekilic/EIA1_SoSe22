@@ -13,9 +13,10 @@ function addText() {
     createCheckButton(newPoint); // in die function springen chekbutton und newpoint nutzen
     var textBlock = document.createTextNode(text);
     newPoint.appendChild(textBlock); //Browsereingabe Liste
+    trashButton(newPoint);
     zaehler++;
     zaehlerTitel();
-
+    input.value = "";
 }
 
 function zaehlerTitel() {
@@ -53,4 +54,6 @@ function DeleteTrashCan() {
     var acttiveButton = document.querySelector("i:hover"); // Müllsymbol wird unter variable gesppeichert
     var activeli = acttiveButton.parentElement;
     activeli.remove();
+    zaehler--;
+    zaehlerTitel();
 }
