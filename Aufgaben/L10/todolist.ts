@@ -19,7 +19,7 @@ function addText() {
     input.value = "";
 }
 
-function zaehlerTitel() {
+function zaehlerTitel() { //Zähler, wenn eine Task hinzugefügt wird mit if-else Methode
     var zaehler1 = document.getElementById("zaehlerTitel");
     if (zaehler == 1) {
         zaehler1.innerText = String(zaehler + " Task"); //zaehler wird rausgenommen und durch string keine number // parsInt gegengteil
@@ -42,7 +42,7 @@ function checkButtonAufruf() {
     activeButton.classList.remove("fa-circle"); // klasse circle-check wird getauscht mit circle
 }
 
-function trashButton(newPoint) {
+function trashButton(newPoint) { //newpoint wird hier miteinbezogen obwohl trashbutton nicht in function ist
     var TrashCan = document.createElement("i"); // i element wird erzeugt und mülleimer wird angezeigt
     TrashCan.classList.add("fa-regular");
     TrashCan.classList.add("fa-trash-can");
@@ -51,8 +51,8 @@ function trashButton(newPoint) {
 }
 
 function DeleteTrashCan() {
-    var acttiveButton = document.querySelector("i:hover"); // Müllsymbol wird unter variable gesppeichert
-    var activeli = acttiveButton.parentElement;
+    var activeButton = document.querySelector("i:hover"); // Müllsymbol wird unter variable gespeichert
+    var activeli = activeButton.parentElement;
     activeli.remove();
     zaehler--;
     zaehlerTitel();
