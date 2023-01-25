@@ -1,4 +1,6 @@
-
+// Abgabe: Endabgabe für EIA1
+// Aufgabe: MKB LernApp für EIA1 entwickeln
+// Hilfsmittel: W3School, SoSe22 Endabgabe ähnlich und Zusammenarbeit mit EIA1 Kommilitonin Havva Günay
 
 // Datenstruktur einer einzelnen Frage mit Antworten im interface speichern als string
 interface Question {

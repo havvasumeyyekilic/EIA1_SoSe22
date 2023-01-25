@@ -1,3 +1,6 @@
+// Abgabe: Endabgabe für EIA1
+// Aufgabe: MKB LernApp für EIA1 entwickeln
+// Hilfsmittel: W3School, SoSe22 Endabgabe ähnlich und Zusammenarbeit mit EIA1 Kommilitonin Havva Günay
 // Alle Fragen und Antworten in Arrays mit je 4 Kategorien
 const questions = {
     html: [
