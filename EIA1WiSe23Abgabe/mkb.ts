@@ -16,7 +16,7 @@ interface AllQuestions {
     typescript: Question[];
 }
 
-// Alle Fragen und Antworten in Arrays mit je 4 Kategorien
+// Alle Fragen und Antworten in Arrays mit je 3 Kategorien
 const questions: AllQuestions = {
     html: [
         {
@@ -26,7 +26,7 @@ const questions: AllQuestions = {
         },
         {
             question: "Wie definiert man die Art des Dokuments?",
-            wrongAnswers: [ "<DOCTYPE html!!>", ">DOCTYPE html<"],
+            wrongAnswers: ["<DOCTYPE html!!>", ">DOCTYPE html<"],
             correctAnswer: "<!DOCTYPE html>"
         },
         {
@@ -53,14 +53,14 @@ const questions: AllQuestions = {
         },
         {
             question: "Was heißt CSS ausgeschrieben?",
-            wrongAnswers: [ "Customer Self Service", "Cascading Self Style"],
+            wrongAnswers: ["Customer Self Service", "Cascading Self Style"],
             correctAnswer: "Cascading Style Sheets"
         },
         {
             question: "Welches ist ein ID Selektor?",
             wrongAnswers: ["<p>", "<...class = “myClass”>"],
             correctAnswer: "<...id = “myID”>"
-            
+
         },
         {
             question: "Mit welcher Eigenschaft ist es möglich einem Bild einen Rand zu geben?",
@@ -116,7 +116,7 @@ var correctAnswer: string;
 var currentQuestion: Question;
 
 // Speichert den Punktestand
-var score: number = 0; 
+var score: number = 0;
 
 
 
@@ -173,9 +173,9 @@ function categorySelected(): void {
 function loadQuestion(): void {
     currentQuestion = selectedQuestions.shift();
     document.getElementById("question").textContent = currentQuestion.question;
-    
+
     correctAnswer = currentQuestion.correctAnswer; // korrekte antwort
-    
+
     // erstellt ein Array mit den falschen und richtigen antworten
     var allAnswers: string[] = [currentQuestion.correctAnswer];
     for (var i: number = 0; i < currentQuestion.wrongAnswers.length; i++) {
@@ -187,7 +187,7 @@ function loadQuestion(): void {
 
     // entfernt alle Antwort buttons
     document.getElementById("answers").innerHTML = "";
-    
+
     // Fügt für jede antwort einen Antwort button in das Dokument ein
     for (var j: number = 0; j < allAnswers.length; j++) {
         var newButton: HTMLButtonElement = document.createElement("button");
@@ -202,10 +202,10 @@ function loadQuestion(): void {
 function clickedAnswer(): void {
     // speichert den textinhalt des button, welcher diese Funktion aufgerufen hat
     var givenAnswer: string = this.textContent;
-    
+
     if (givenAnswer == correctAnswer) {
         document.getElementById("correct").textContent = "Korrekt!";
-        
+
         score++;
         updateScore();
 
@@ -233,22 +233,18 @@ function nextQuestion(): void { // function für nächste frage und antwort
 }
 
 // Versteckt alles und zeigt den Endscreen
-function gameEnded(): void { 
+function gameEnded(): void {
     document.getElementById("score").style.display = "none";
     document.getElementById("quiz").style.display = "none";
     document.getElementById("endScreen").style.display = "";
 }
 
-// Started das spiel neu und Punkte werden auf 0 gesetzt
+// Startet das spiel neu und Punkte werden auf 0 gesetzt
 function restart(): void {
     document.getElementById("endScreen").style.display = "none";
     document.getElementById("category").style.display = "";
     score = 0;
 }
-
-
-
-
 
 
 // Fügt alle event listener zu den Buttons hinzu
