@@ -1,12 +1,17 @@
 html,
 body {
-    background-color: rgb(114, 17, 126);
     width: 375px;
     height: 667px;
     position: relative;
     margin: auto;
     text-align: center;
 
+}
+
+#background {
+    background-color: rgb(114, 17, 126);
+    width: 375px;
+    height: 667px;
 }
 
 header {

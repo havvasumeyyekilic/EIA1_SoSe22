@@ -82,7 +82,7 @@ const questions = {
         }
     ]
 };
-// Speichert die ausgewählte Kategorien
+// Speichert die ausgewählte Kategorien in variable ab
 var category;
 // Speichert die Fragen aus der ausgewählten Kategorie
 var selectedQuestions;
@@ -92,6 +92,7 @@ var correctAnswer;
 var currentQuestion;
 // Speichert den Punktestand
 var score = 0;
+// Funktion ruft Id score für Punktestand ab
 function updateScore() {
     document.getElementById("score").textContent = "Punkte: " + score;
 }

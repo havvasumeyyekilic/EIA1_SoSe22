@@ -100,7 +100,7 @@ const questions: AllQuestions = {
 };
 
 
-// Speichert die ausgewählte Kategorien
+// Speichert die ausgewählte Kategorien in variable ab
 var category: "html" | "css" | "typescript" | "mixed";
 
 // Speichert die Fragen aus der ausgewählten Kategorie
@@ -117,7 +117,7 @@ var score: number = 0;
 
 
 
-
+// Funktion ruft Id score für Punktestand ab
 function updateScore(): void {
     document.getElementById("score").textContent = "Punkte: " + score;
 }
