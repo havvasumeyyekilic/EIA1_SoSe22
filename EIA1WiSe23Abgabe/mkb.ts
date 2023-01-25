@@ -60,6 +60,7 @@ const questions: AllQuestions = {
             question: "Welches ist ein ID Selektor?",
             wrongAnswers: ["<p>", "<...class = “myClass”>"],
             correctAnswer: "<...id = “myID”>"
+            
         },
         {
             question: "Mit welcher Eigenschaft ist es möglich einem Bild einen Rand zu geben?",
